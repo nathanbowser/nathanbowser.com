@@ -1,0 +1,23 @@
+@import partials/base.sass
+@import blueprint.sass
+@import blueprint/reset.sass
+@import compass/utilities.sass
+@import compass/misc.sass
+@import compass/layout.sass
+
++blueprint-typography
++blueprint-debug
+
+
+body
+  #container, #footer
+    +container
+
+  #footer
+    #unobtrusive-logo
+      +prepend(20)
+      +unobtrusive-logo
+
+// Make sure you keep this at the bottom, so it overrides the container mixin!
++sticky-footer(60px, "body #container", "#layout-footer", "#footer")
+
