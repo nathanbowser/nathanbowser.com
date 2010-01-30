@@ -87,14 +87,18 @@ caption { background: #eee; }
 
 .loud { color: black; }
 
-.showgrid { background: url('/images/grid.png?1264722367'); }
+.showgrid { background: url('/images/grid.png?1264739703'); }
 
 body #container, body #footer { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
 body #container, body #footer { display: block; }
-body #footer #unobtrusive-logo { padding-left: 800px; font-family: Monaco, Courier, "Lucida Sans Unicode", monospace; font-size: 1em; color: #888; }
-body #footer #unobtrusive-logo .selector { vertical-align: middle; font-size: 1.3em; }
-body #footer #unobtrusive-logo .brace { vertical-align: middle; font: bold 1.7em Georgia, "Times New Roman", serif; color: #CCC; margin: 0 -0.2em; }
-body #footer #unobtrusive-logo .rule { vertical-align: middle; margin: 0 -0.2em; }
+body #header { height: 75px; margin-bottom: 1.5em; }
+body #content { border-width: thick; border-style: dashed; border-color: #888888; -moz-border-radius: 6px; -webkit-border-radius: 6px; height: 300px; display: inline; float: right; position: relative; margin: 0 -240px 1.5em 240px; display: inline; float: left; margin-right: 0; width: 470px; text-align: center; }
+* html body #content { overflow-x: hidden; }
+body #content h2 { margin-top: 114px; color: #888888; font-size: 36px; font-family: Monaco, Courier, "Lucida Sans Unicode", monospace; }
+body #footer #unobtrusive { padding-left: 800px; font-family: Monaco, Courier, "Lucida Sans Unicode", monospace; font-size: 1em; color: #888; }
+body #footer #unobtrusive .selector { vertical-align: middle; font-size: 1.3em; }
+body #footer #unobtrusive .brace { vertical-align: middle; font: bold 1.7em Georgia, "Times New Roman", serif; color: #CCC; margin: 0 -0.2em; }
+body #footer #unobtrusive .rule { vertical-align: middle; margin: 0 -0.2em; }
 
 html, body { height: 100%; }
 

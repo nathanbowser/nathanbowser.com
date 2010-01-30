@@ -2,22 +2,42 @@
 @import blueprint.sass
 @import blueprint/reset.sass
 @import compass/utilities.sass
+//@import compass/css3.sass
 @import compass/misc.sass
 @import compass/layout.sass
 
 +blueprint-typography
 +blueprint-debug
 
+!content_height = 300px
 
 body
   #container, #footer
     +container
-
+  #header
+    :height 75px
+    +append-bottom
+  #content
+    :border
+      :width thick
+      :style dashed
+      :color #888888
+    +border-radius
+    :height #{!content_height}
+    +push(6)
+    +column(12, true)
+    :text-align center
+    h2
+      !prepend_top = (!content_height / 2 - 36px)
+      +prepend-top(!prepend_top)
+      :color #888888  
+      :font-size 36px
+      :font-family Monaco, Courier, "Lucida Sans Unicode", monospace
   #footer
-    #unobtrusive-logo
+    #unobtrusive
       +prepend(20)
       +unobtrusive-logo
 
-// Make sure you keep this at the bottom, so it overrides the container mixin!
+// keep this at the bottom, so it overrides the container mixin!
 +sticky-footer(60px, "body #container", "#layout-footer", "#footer")
 
